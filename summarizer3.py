@@ -73,7 +73,7 @@ def main():
         if page_source:
             # Extract links from the page
             links = extract_links(page_source)
-            st.write(links)
+            # st.write(links)
 
             if links:
                 # st.write("Found the following links:")
@@ -84,7 +84,7 @@ def main():
                 for link in links:
                     st.write(f"Fetching content from: {link}")
                     page_text = extract_text(link)
-                    st.write(f"Content from {link}:")
+                    # st.write(f"Content from {link}:")
                     # st.write(page_text[:1000])  # Display the first 1000 characters
                     content = content + '\n' + page_text[:1000]
                     # st.write("\n\n")
