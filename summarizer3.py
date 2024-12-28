@@ -4,13 +4,12 @@ from bs4 import BeautifulSoup
 import trafilatura
 from langchain.chat_models import AzureChatOpenAI
 from langchain.prompts import PromptTemplate
-import os
+
 
 from langchain.chains import LLMChain
 
 from langchain_groq import ChatGroq
 
-os.environ['SSL_CERT_FILE'] = 'C:\\Users\\RSPRASAD\\AppData\\Local\\.certifi\\cacert.pem'
 
 url = ''
 # Function to get the page source
@@ -63,7 +62,7 @@ def main():
 
     if url:
         
-        GROQ_API_KEY = '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'
+        GROQ_API_KEY = st.secrets['GROQ_API_KEY']
         llm = ChatGroq(temperature=0.8, groq_api_key=GROQ_API_KEY, model_name="llama3-70b-8192")
 
         st.write(f"Fetching links from: {url}")
