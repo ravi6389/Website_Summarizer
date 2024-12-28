@@ -38,8 +38,10 @@ def extract_links(page_source):
             if link.startswith('/'):
                 link = f"{url}{link}"
             links.append(link)
-        if len(links) == 5:  # Stop when 5 links are found
+        if len(links) == 10:  # Stop when 5 links are found
             break
+        links = list(set(links))
+        
     return links
 
 # Function to extract text content from a page using Trafilatura
