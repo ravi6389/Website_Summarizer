@@ -66,7 +66,7 @@ def main():
     """)
 
     # Input URL
-    url = st.text_input("Enter URL to scrape:")
+    url = st.text_input("Enter URL of the website that you want to be summarized:")
 
     content = ''
 
