@@ -41,6 +41,9 @@ def extract_links(page_source):
         if len(links) == 10:  # Stop when 5 links are found
             break
         links = list(set(links))
+
+    if(len(links)>5):
+        links = links[:5]
         
     return links
 
