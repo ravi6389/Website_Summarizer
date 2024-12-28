@@ -78,12 +78,12 @@ def main():
         if page_source:
             # Extract links from the page
             links = extract_links(page_source)
-            st.write(links)
+            # st.write(links)
 
             if links:
                 st.write("Found the following links:")
-                for i, link in enumerate(links, 1):
-                    st.write(f"{i}. {link}")
+                # for i, link in enumerate(links, 1):
+                #     st.write(f"{i}. {link}")
 
                 st.write("Extracting text from these pages...")
                 for link in links:
