@@ -65,7 +65,7 @@ def main():
         GROQ_API_KEY = st.secrets['GROQ_API_KEY']
         llm = ChatGroq(temperature=0.8, groq_api_key=GROQ_API_KEY, model_name="llama3-70b-8192")
 
-        st.write(f"Fetching links from: {url}")
+        # st.write(f"Fetching links from: {url}")
 
         # Get the page source from the URL
         page_source = fetch_page_source(url)
