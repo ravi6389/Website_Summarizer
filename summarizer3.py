@@ -58,7 +58,13 @@ def extract_text(url):
 # Streamlit UI
 def main():
     global url
-    st.title("Web Scraper and Content Extractor")
+    st.title("Website Summarizing by Scraping the Website")
+    st.markdown("""
+    It can read any CSV or excel file, take user input, write python script to 
+                answer user query and execute it to return answer to user's question.\n
+    Developed by Ravi Shankar Prasad. 
+    
+    """)
 
     # Input URL
     url = st.text_input("Enter URL to scrape:")
