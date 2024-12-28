@@ -89,8 +89,8 @@ def main():
                 for link in links:
                     st.write(f"Fetching content from: {link}")
                     page_text = extract_text(link)
-                    st.write(f"Content from {link}:")
-                    st.write(page_text[:1000])  # Display the first 1000 characters
+                    # st.write(f"Content from {link}:")
+                    # st.write(page_text[:1000])  # Display the first 1000 characters
                     content = content + '\n' + page_text[:1000]
                     # st.write("\n\n")
                 # st.write(f'Final content - {content}')
