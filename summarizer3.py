@@ -60,8 +60,7 @@ def main():
     global url
     st.title("Website Summarizing by Scraping the Website")
     st.markdown("""
-    It can read any CSV or excel file, take user input, write python script to 
-                answer user query and execute it to return answer to user's question.\n
+    It crawls the user provided website and then uses LLM/AI to summarize the wesbite content. Doesn't work for those websites which require captcha or are bot unfriendly.\n
     Developed by Ravi Shankar Prasad. 
     
     """)
